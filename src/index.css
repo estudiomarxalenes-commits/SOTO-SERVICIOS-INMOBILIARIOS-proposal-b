@@ -202,6 +202,7 @@ h1, h2, h3, h4, h5, h6 {
     animation: none !important;
     opacity: 1 !important;
   }
+  .hero-video { display: none !important; }
   .btn-primary:hover, .btn-secondary:hover, .btn-sand:hover, .card:hover { transform: none !important; }
   .scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale {
     transition: none !important; transform: none !important; animation: none !important; opacity: 1 !important;

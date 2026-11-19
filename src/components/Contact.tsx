@@ -361,7 +361,7 @@ const Contact = () => {
                 />
                 <label htmlFor="privacy" className="text-sm text-gray-600">
                   Acepto la{' '}
-                  <a href="/es/privacidad" target="_blank" rel="noopener noreferrer" className="text-[#28352b] hover:underline font-medium">
+                  <a href="/privacidad" target="_blank" rel="noopener noreferrer" className="text-[#28352b] hover:underline font-medium">
                     política de privacidad
                   </a>
                   {' '}y el tratamiento de mis datos personales *

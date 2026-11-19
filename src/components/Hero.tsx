@@ -8,12 +8,24 @@ const Hero = () => {
       className="relative min-h-[100svh] flex flex-col justify-end overflow-hidden"
       aria-label="Portada principal"
     >
-      {/* Full-bleed visual plane */}
+      {/* Full-bleed visual plane: compressed stock loop + poster */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <video
+          className="absolute inset-0 h-full w-full object-cover object-center hero-ken-burns hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/assets/video/hero-tour-poster.webp"
+        >
+          <source src="/assets/video/hero-tour.webm" type="video/webm" />
+          <source src="/assets/video/hero-tour.mp4" type="video/mp4" />
+        </video>
         <img
-          src="/assets/hero-valencia.png"
+          src="/assets/hero-valencia.webp"
           alt=""
-          className="absolute inset-0 h-full w-full object-cover object-center hero-ken-burns"
+          className="absolute inset-0 h-full w-full object-cover object-center -z-10"
           fetchPriority="high"
           loading="eager"
         />
@@ -34,7 +46,7 @@ const Hero = () => {
           className="font-serif font-medium text-white/95 text-2xl md:text-4xl lg:text-[2.75rem] leading-snug tracking-tight max-w-2xl mb-5 hero-copy-enter"
           style={{ animationDelay: '0.2s' }}
         >
-          Tu hogar perfecto te espera
+          Tu hogar en el barrio, con la familia Soto
         </h1>
 
         <p
@@ -56,7 +68,7 @@ const Hero = () => {
             Ver propiedades
             <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>
-          <Link to="/vender-mi-piso" className="btn-ghost-light justify-center">
+          <Link to="/valoracion" className="btn-ghost-light justify-center">
             Valorar mi piso
           </Link>
         </div>

@@ -14,7 +14,7 @@ function messageForPath(pathname: string): string {
   if (pathname.startsWith('/vender-mi-piso')) {
     return 'Hola, quiero vender mi piso y me gustaría que me contactéis';
   }
-  if (pathname.startsWith('/valuation') || pathname.startsWith('/free-valuation')) {
+  if (pathname.startsWith('/valoracion') || pathname.startsWith('/valuation') || pathname.startsWith('/free-valuation')) {
     return 'Hola, me interesa la valoración gratuita de mi propiedad';
   }
   if (pathname.startsWith('/contacto')) {

@@ -130,7 +130,7 @@ const Footer = () => (
             <FooterLink href="/propiedades">Comprar</FooterLink>
             <FooterLink href="/propiedades">Alquilar</FooterLink>
             <FooterLink href="/vender-mi-piso">Vender</FooterLink>
-            <FooterLink href="/propiedades">Búsqueda avanzada</FooterLink>
+            <FooterLink href="/valoracion">Valoración</FooterLink>
           </ul>
         </div>
 
@@ -196,9 +196,9 @@ const Footer = () => (
         </p>
         <nav className="flex gap-6">
           {[
-            { href: '/es/privacidad', label: 'Política de Privacidad' },
-            { href: '/es/aviso-legal', label: 'Aviso Legal' },
-            { href: '/es/cookies', label: 'Cookies' },
+            { href: '/privacidad', label: 'Política de Privacidad' },
+            { href: '/aviso-legal', label: 'Aviso Legal' },
+            { href: '/cookies', label: 'Cookies' },
           ].map(({ href, label }) => (
             <a
               key={href}

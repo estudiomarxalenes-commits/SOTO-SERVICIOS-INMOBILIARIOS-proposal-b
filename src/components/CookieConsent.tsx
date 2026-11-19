@@ -169,11 +169,11 @@ export const CookieConsent = () => {
                 <p className="text-xs text-gray-500 mb-4">
                   Al hacer clic en "Aceptar todas", aceptas el almacenamiento de cookies en tu dispositivo.
                   Consulta nuestra{' '}
-                  <a href="/es/cookies" className="text-[#28352b] hover:underline">
+                  <a href="/cookies" className="text-[#28352b] hover:underline">
                     Política de Cookies
                   </a>
                   {' '}y{' '}
-                  <a href="/es/privacidad" className="text-[#28352b] hover:underline">
+                  <a href="/privacidad" className="text-[#28352b] hover:underline">
                     Política de Privacidad
                   </a>
                   {' '}para más información.

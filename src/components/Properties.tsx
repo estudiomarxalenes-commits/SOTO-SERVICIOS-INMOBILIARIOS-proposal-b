@@ -248,14 +248,14 @@ const Properties: React.FC<PropertiesProps> = ({ featuredOnly = false }) => {
               >
                 <div className="relative overflow-hidden mb-5">
                   <img
-                    src={property.images[0] || '/assets/property-fallback-premium.png'}
+                    src={property.images[0] || '/assets/property-fallback-premium.webp'}
                     alt={`${property.title} - ${property.location} - ${property.area}m² ${property.beds} habitaciones`}
                     className="w-full h-72 object-cover property-img"
                     loading={index === 0 ? 'eager' : 'lazy'}
                     fetchPriority={index === 0 ? 'high' : 'auto'}
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = '/assets/property-fallback-premium.png';
+                      target.src = '/assets/property-fallback-premium.webp';
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-forest-900/30 to-transparent property-overlay" />

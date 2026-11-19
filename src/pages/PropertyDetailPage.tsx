@@ -189,12 +189,12 @@ const PropertyDetailPage = () => {
               <div className="relative mb-12 md:mb-16">
                 <div className="relative h-[300px] md:h-[500px] rounded-2xl overflow-hidden">
                   <img
-                    src={property.images[currentImageIndex] || '/assets/property-fallback-premium.png'}
+                    src={property.images[currentImageIndex] || '/assets/property-fallback-premium.webp'}
                     alt={`${property.title} - Imagen ${currentImageIndex + 1}`}
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = '/assets/property-fallback-premium.png';
+                      target.src = '/assets/property-fallback-premium.webp';
                     }}
                   />
                   {property.images.length > 1 && (
@@ -229,12 +229,12 @@ const PropertyDetailPage = () => {
                         }`}
                       >
                         <img
-                          src={image || '/assets/property-fallback-premium.png'}
+                          src={image || '/assets/property-fallback-premium.webp'}
                           alt={`Miniatura ${index + 1}`}
                           className="w-full h-full object-cover"
                           onError={(e) => {
                             const target = e.target as HTMLImageElement;
-                            target.src = '/assets/property-fallback-premium.png';
+                            target.src = '/assets/property-fallback-premium.webp';
                           }}
                         />
                       </button>
@@ -469,7 +469,7 @@ const PropertyDetailPage = () => {
                       />
                       <label className="ml-3 text-sm text-gray-600">
                         He leído y acepto la{' '}
-                        <a href="/es/privacidad" target="_blank" rel="noopener noreferrer" className="text-[#28352b] hover:underline">
+                        <a href="/privacidad" target="_blank" rel="noopener noreferrer" className="text-[#28352b] hover:underline">
                           Política de Privacidad
                         </a>{' '}
                         *
